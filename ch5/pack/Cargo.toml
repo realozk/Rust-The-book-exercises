@@ -1,6 +1,7 @@
 [package]
-name = "CH3"
+name = "cyber_watch"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+colored = "2.0"
