@@ -1,1 +1,5 @@
-error: manifest path `C:\Users\omar\Desktop\rust_hd\Cargo.toml` does not exist
+error: failed to parse manifest at `C:\Users\omar\Desktop\Rust_Exercises\Cargo.toml`
+
+Caused by:
+  no targets specified in the manifest
+  either src/lib.rs, src/main.rs, a [lib] section, or [[bin]] section must be present
