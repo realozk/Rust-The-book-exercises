@@ -1,3 +1,5 @@
+mod ch11_test;
+
 #[derive(Debug, Clone)]
 struct Packet {
     id: u32,
@@ -40,7 +42,6 @@ impl Iterator for PacketStream {
     }
 }
 
-// A generic struct that holds a closure for filtering logic.
 // F: The specific closure type.
 struct Firewall<F>
 where
@@ -63,7 +64,6 @@ fn main() {
     let max_allowed_size = 400;
     let critical_keyword = String::from("SUSPICIOUS");
 
-    // Define the filtering logic.
     let complex_filter = move |p: &Packet| {
         p.size_bytes > max_allowed_size || (!p.is_encrypted && critical_keyword == "SUSPICIOUS")
     };
@@ -93,7 +93,6 @@ fn main() {
     println!("\nTotal Flagged Packets: {:?}", flagged_packets);
 
     // Correlate packet IDs with priority levels using zip.
-    // Stops at the shortest iterator.
     let priorities = vec![1, 5, 2];
 
     let report: Vec<_> = flagged_packets.iter().zip(priorities.iter()).collect();
