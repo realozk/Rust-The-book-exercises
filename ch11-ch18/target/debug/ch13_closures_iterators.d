@@ -1,1 +1,0 @@
-C:\Users\omar\RustroverProjects\Rust-The-book-exercises\ch11-ch18\target\debug\ch13_closures_iterators.exe: C:\Users\omar\RustroverProjects\Rust-The-book-exercises\ch11-ch18\src\bin\ch13_closures_iterators.rs

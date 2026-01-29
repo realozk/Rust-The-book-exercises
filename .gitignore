@@ -1,8 +1,6 @@
-/target
+target/
+**/*.rs.bk
+*.swp
 .idea/
 .vscode/
-*.iml
 .DS_Store
-Thumbs.db
-*.bak
-*.swp
