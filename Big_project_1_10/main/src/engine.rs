@@ -8,7 +8,7 @@ pub struct IncidentReport<'a, T> {
     pub severity: Severity,
     pub recommendation: String,
 }
-
+//the prameter ask for generic type but also it musr impl the Display trait
 impl<'a, T: Display> Display for IncidentReport<'a, T> {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         write!(
@@ -33,6 +33,7 @@ impl<T> ThreatEngine<T>
 where
     T: SecurityObject + Display,
 {
+    //here we have fn that return an vector that contain an report and with generic
     pub fn analyze<'a>(&'a self) -> Result<Vec<IncidentReport<'a, T>>, ScanError> {
         if self.data_source.is_empty() {
             return Err(ScanError::EmptySource);
