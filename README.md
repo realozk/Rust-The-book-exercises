@@ -20,8 +20,9 @@
 
 | المجلد | الوصف | المفاهيم |
 | :--- | :--- | :--- |
-| **ch4-ch5** | الملكية والهياكل | `Ownership`, `Borrowing`, `Structs` |
-| **ch11-ch18** | مواضيع متقدمة | `Traits`, `Lifetimes`, `Testing`, `Iterators` |
+|**01_ownership_structs** | الملكية والهياكل | `Ownership`, `Borrowing`, `Structs` |
+| **02_enums_collections** | التعدادات والمجموعات | `Enums`, `Match`, `Vectors`, `HashMaps` |
+| **03_advanced_features**| مواضيع متقدمة | `Traits`, `Lifetimes`, `Testing`, `Iterators` |
 | **cyber_watch** |  مشروع سايبر | محاكاة تحليل الشبكات (Port Scanner & Traffic) |
 | **Big_project** | المشروع النهائي | تطبيق شامل لكل ما سبق |
 
